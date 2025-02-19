@@ -1,0 +1,26 @@
+
+.nav-buttons-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: .2rem;
+
+}
+.nav-buttons-div a{
+    text-decoration: none;
+}
+.nav-buttons-div div {
+    min-width: 150px;
+    min-height: 50px;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+.nav-buttons-div div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
