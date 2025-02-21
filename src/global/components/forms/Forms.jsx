@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { backButtonStyle, goBack, paddingStyle } from "../../features/goBackBtn"
+import FormsTwo from "./FormsTwi";
 
 const Forms=()=>{
 
@@ -7,7 +8,9 @@ const Forms=()=>{
         border:'1px solid black',
         padding:'1rem'
     }
-
+    const p2={
+        paddingBottom:'2rem'
+    }
 
     const [inputs, setInputs] = useState({});
 
@@ -28,18 +31,31 @@ const Forms=()=>{
         <div className="container" style={paddingStyle}>
             <div style={backButtonStyle} onClick={goBack}>Back</div>
         <h1>Form elemek használata</h1>
-            <form style={border} onSubmit={handleSubmit}>
-                <label htmlFor="enter-name">Írja be a nevét</label>
-                <input type="text" id="enter-name"
-                    value={inputs.username || ""}
-                    onChange={handleChange}
-                    name="username"
-                />
-                <label htmlFor="age">Enter your age</label>
-                <input type="number" name="age" id="age" value={inputs.age || ""} />
-                
-                <input type="submit" />
-            </form>
+
+
+            <div style={p2}>
+
+                {/* <form style={border} onSubmit={handleSubmit}>
+                    <label htmlFor="enter-name">Írja be a nevét</label>
+                    <input 
+                        type="text" 
+                        id="enter-name"
+                        value={inputs.username || ""}
+                        onChange={handleChange}
+                        name="username"
+                    />
+
+                    <label htmlFor="age">Enter your age</label>
+                    <input type="number" name="age" id="age" value={inputs.age || ""} />
+                    
+                    <input type="submit" />
+                </form> */}
+
+            </div>
+            <div style={p2}>
+             <FormsTwo />
+
+            </div>
         </div>
     )
 }
