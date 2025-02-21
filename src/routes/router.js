@@ -14,6 +14,8 @@ import Onclick from "../global/components/eventsComp/Onclick";
 import Conditionals from "../global/components/conditionals/IfStatement";
 import List from "../global/components/lists/List";
 import Forms from "../global/components/forms/Forms";
+import DefaultLayout from "../global/pages/defaultLayout/DefaultLayout";
+import Hooks from "../global/components/hooks1/hooks";
 
 
 const router = createBrowserRouter([
@@ -21,7 +23,7 @@ const router = createBrowserRouter([
         path: '/',
         element: 
         <>
-            <Outlet />
+            <DefaultLayout />
         </>,
         children:[
 
@@ -85,6 +87,10 @@ const router = createBrowserRouter([
             {
                 path:'forms',
                 element: <Forms />
+            },
+            {
+                path: 'hooks',
+                element: <Hooks />
             }
         ]
     }

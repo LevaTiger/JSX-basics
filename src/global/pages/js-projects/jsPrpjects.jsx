@@ -47,6 +47,13 @@ const JsProjects =()=>{
                 <div>
                     <a href="forms">Forms</a>
                 </div>
+                <div>
+                    <a href="hooks">Hooks</a>
+                </div>
+            </div>
+            <div className="article">
+                <h1>Szevasz olvasó!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consectetur dicta repellendus veniam. Libero odio accusamus sunt officia sed ducimus aspernatur ipsum perferendis aliquam rem. Reprehenderit, inventore! Ad officia cum aut deserunt consequatur optio architecto tempora asperiores harum. Perferendis id qui eos debitis, illo quam minima! Blanditiis dolores voluptatem iste?</p>
             </div>
         </div>
     )

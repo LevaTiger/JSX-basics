@@ -4,6 +4,7 @@ import Destructuring from "./destructuring/Destructuring";
 import Onclick from "./eventsComp/Onclick";
 import Forms from "./forms/Forms";
 import Functions from "./functions/Functions";
+import Hooks from "./hooks1/hooks";
 import JsModule from "./jsModules/JsModule";
 import List from "./lists/List";
 import PropFunction from "./propFunction/PropFunction";
@@ -28,5 +29,6 @@ export default {
     Onclick,
     IfStatement: Conditionals,
     List,
-    Forms
+    Forms,
+    Hooks
 }

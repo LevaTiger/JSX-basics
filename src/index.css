@@ -18,6 +18,8 @@ code {
 
 .container{
 
+  font-family:monospace;
+  font-size:20px;
   width: 800px;
   min-height: 100vh;
   margin:0 auto;

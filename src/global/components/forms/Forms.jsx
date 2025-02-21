@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { backButtonStyle, goBack, paddingStyle } from "../../features/goBackBtn"
 import FormsTwo from "./FormsTwi";
+import Login from "./Login";
 
 const Forms=()=>{
 
@@ -55,6 +56,10 @@ const Forms=()=>{
             <div style={p2}>
              <FormsTwo />
 
+            </div>
+            <div style={p2}>
+                    <h2>Bejelentkezés</h2>
+                    <Login />
             </div>
         </div>
     )
