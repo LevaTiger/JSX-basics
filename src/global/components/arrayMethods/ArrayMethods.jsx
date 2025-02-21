@@ -50,7 +50,7 @@ const ArrayMethods =()=>{
                 ))}
                 <h4>Original Array data:</h4>
                 <p>{`${textData}`}</p>
-                <h1>New text</h1>
+                <h1>New text 3rd try</h1>
             </section>
         </div>
     )
