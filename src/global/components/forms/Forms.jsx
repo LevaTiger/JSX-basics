@@ -60,6 +60,53 @@ const Forms=()=>{
             <div style={p2}>
                     
                     <Login />
+                    <hr />
+                    <p>Code:</p>
+                    <p>{`    const [isLoggedIn, setIsLoggedIn] =useState(false)
+                        const [loginData, setLoginData] = useState({
+                            username: '',
+                            password: ''
+                        })`}
+                    </p>
+                    <p>
+                        {`
+                            const registeredUser={
+                                username: 'teszt',
+                                password:'teszt123'
+                            }
+                        `}
+                    </p>
+                    <p>
+                        {`    const handleLoginChange =(event)=>{
+                            const name = event.target.name;
+                            const value = event.target.value;
+                            setLoginData(values=>({...values, [name]:value}));
+                        }`}
+                    </p>
+                    <p>
+                        {`    const handleLoginSubmit = (event)=>{
+                                    event.preventDefault(); 
+                                const user= {username: loginData.username, password: loginData.password}
+                                console.log(loginData)
+                                if(user.username === registeredUser.username && user.password === registeredUser.password){
+                                    setIsLoggedIn(true)
+                                    console.log('Sikeresen bejelentkezve: isLoggedIn: $ {isLoggedIn}')
+                                }
+                                else{
+                                    console.log('Sikertelen bejelentkezés: isLoggedIn: $ {isLoggedIn}')
+                                }
+                            }
+                        `}
+                    </p>
+                    <p>
+                        {
+                               ` const handleLogout=()=>{
+                                    setIsLoggedIn(false)
+                                    console.log('Kijelentkeztél')
+                                }`
+                        }
+                    </p>
+                   
             </div>
         </div>
     )
