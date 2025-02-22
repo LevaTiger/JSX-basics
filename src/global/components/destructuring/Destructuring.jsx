@@ -23,7 +23,7 @@ const Destructuring =()=>{
     // console.log(`orange: ${orange}`)
     
     //also works like this:
-    const [rd, ylw, grn, rng] = fruits;
+    // const [rd, ylw, grn, rng] = fruits;
     
     // console.log(rd)
     // console.log(ylw)
@@ -39,10 +39,10 @@ const Destructuring =()=>{
         return [add, subtract, multiply, divide]
     }
     const [add, subtract, multiply, divide] = calculate(4,2)
-    // console.log(`4+2 is ${add}`)
-    // console.log(`4-2 is ${subtract}`)
-    // console.log(`4x2 is ${multiply}`)
-    // console.log(`4/2 is ${divide}`)
+    console.log(`4+2 is ${add}`)
+    console.log(`4-2 is ${subtract}`)
+    console.log(`4x2 is ${multiply}`)
+    console.log(`4/2 is ${divide}`)
 
     //destructuring objects in a function old - objektumok kicsomagolása egy függvénnyel régi mód
     const vehicleOne ={
@@ -55,7 +55,7 @@ const Destructuring =()=>{
     
     const myVehicle =(vehicle)=>{
         const message = 'My ' +vehicle.type + ' is a ' + vehicle.color+ ' ' +vehicle.brand + ' ' +vehicle.model + '.';
-        // console.log(message)
+        console.log(message)
     }
     myVehicle(vehicleOne);
 
@@ -69,7 +69,7 @@ const Destructuring =()=>{
         color: 'bonewhite'
     }
     const myVehicleTwo =({type, color, brand, model})=>{
-        const messageTwo = 'My' + type + ' is a ' + color + ' ' + brand + ' ' + model + ' ';
+        // const messageTwo = 'My' + type + ' is a ' + color + ' ' + brand + ' ' + model + ' ';
         // console.log(messageTwo)
     }
     myVehicleTwo(vehicleTwo)

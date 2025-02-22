@@ -58,7 +58,7 @@ const Forms=()=>{
 
             </div>
             <div style={p2}>
-                    <h2>Bejelentkezés</h2>
+                    
                     <Login />
             </div>
         </div>

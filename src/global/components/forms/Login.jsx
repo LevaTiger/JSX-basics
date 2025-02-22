@@ -39,6 +39,7 @@ const Login =()=>{
    
     return(
         <div className='login-form'>
+            <h2>Bejelentkezés</h2>
             <form onSubmit={handleLoginSubmit}>
                 <div className="login-input">
                     <label htmlFor="username">Felhasználónév: </label>

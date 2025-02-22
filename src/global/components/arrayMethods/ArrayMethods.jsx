@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { goBack, backButtonStyle, paddingStyle } from "../../features/goBackBtn";
 
 const ArrayMethods =()=>{
