@@ -50,6 +50,9 @@ const JsProjects =()=>{
                 <div>
                     <a href="hooks">Hooks</a>
                 </div>
+                <div>
+                    <a href="szabaduloSzoba">Szabaduló - Gyakorlás</a>
+                </div>
             </div>
             <div className="article">
                 <h1>Szevasz olvasó!</h1>

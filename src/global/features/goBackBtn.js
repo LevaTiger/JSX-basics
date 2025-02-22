@@ -25,8 +25,15 @@ const paddingStyle = {
     
 };
 
+   const pColorBlue={
+        color: 'blue',
+        whiteSpace: 'pre-line',
+        backgroundColor: 'darkgrey'
+    }
+
 export {
     backButtonStyle,
     goBack,
-    paddingStyle
+    paddingStyle,
+    pColorBlue
 }

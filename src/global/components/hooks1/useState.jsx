@@ -36,6 +36,7 @@ const UseState=()=>{
                 It is a {car.color} {car.model} from {car.year}. 
             </p>
             <button type="button" onClick={updateColor}>Change Blue</button>
+            <hr />
         </div>
     )
 }

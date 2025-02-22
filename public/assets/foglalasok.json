@@ -1,0 +1,23 @@
+[ 
+{ 
+    "cim": "Petőfi Sándor utca 43.", 
+    "datum": "2019-05-16", 
+    "fo": 6, 
+    "iranyitoszam": 1113, 
+    "nev": "Ács Miklós" 
+}, 
+{ 
+    "cim": "Lajos utca 3/a", 
+    "datum": "2019-05-17", 
+    "fo": 2, 
+    "iranyitoszam": 1221,
+    "nev": "Példa Béla"
+},
+{
+    "cim": "Istvánné utca 34.",
+    "datum": "2019-05-04",
+    "fo": 4,
+    "iranyitoszam": 1332,
+    "nev": "Bodnár Tamás"
+}
+]

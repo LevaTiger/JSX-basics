@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { backButtonStyle, goBack, paddingStyle } from "../../features/goBackBtn"
+import { backButtonStyle, goBack, paddingStyle, pColorBlue } from "../../features/goBackBtn"
 import FormsTwo from "./FormsTwi";
 import Login from "./Login";
 
@@ -62,13 +62,13 @@ const Forms=()=>{
                     <Login />
                     <hr />
                     <p>Code:</p>
-                    <p>{`    const [isLoggedIn, setIsLoggedIn] =useState(false)
+                    <p style={pColorBlue}>{`    const [isLoggedIn, setIsLoggedIn] =useState(false)
                         const [loginData, setLoginData] = useState({
                             username: '',
                             password: ''
                         })`}
                     </p>
-                    <p>
+                    <p style={pColorBlue}>
                         {`
                             const registeredUser={
                                 username: 'teszt',
@@ -76,14 +76,14 @@ const Forms=()=>{
                             }
                         `}
                     </p>
-                    <p>
+                    <p style={pColorBlue}>
                         {`    const handleLoginChange =(event)=>{
                             const name = event.target.name;
                             const value = event.target.value;
                             setLoginData(values=>({...values, [name]:value}));
                         }`}
                     </p>
-                    <p>
+                    <p style={pColorBlue}>
                         {`    const handleLoginSubmit = (event)=>{
                                     event.preventDefault(); 
                                 const user= {username: loginData.username, password: loginData.password}
@@ -98,7 +98,7 @@ const Forms=()=>{
                             }
                         `}
                     </p>
-                    <p>
+                    <p style={pColorBlue}>
                         {
                                ` const handleLogout=()=>{
                                     setIsLoggedIn(false)

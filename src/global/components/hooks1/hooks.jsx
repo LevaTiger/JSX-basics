@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { backButtonStyle, goBack, paddingStyle } from "../../features/goBackBtn";
 import UseState from "./useState";
+import UseEffect from "./UseEffect";
 
 const Hooks =()=>{
 
@@ -35,6 +36,7 @@ const Hooks =()=>{
             >Green</button>
         </div>
         <UseState />
+        <UseEffect />
       </div>
     );
   }

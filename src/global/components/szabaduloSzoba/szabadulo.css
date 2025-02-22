@@ -1,0 +1,13 @@
+.table-layout{
+    background-color: rgb(189, 216, 189);
+}
+.table-layout thead tr th{
+    padding: 1rem;
+    
+}
+.table-layout tbody tr td{
+    padding: 1rem;
+}
+.table-layout thead tr:not(:last-of-type){
+    border-bottom: 1px solid black;
+}

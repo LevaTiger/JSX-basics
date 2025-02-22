@@ -16,6 +16,7 @@ import List from "../global/components/lists/List";
 import Forms from "../global/components/forms/Forms";
 import DefaultLayout from "../global/pages/defaultLayout/DefaultLayout";
 import Hooks from "../global/components/hooks1/hooks";
+import SzabaduloSzoba from "../global/components/szabaduloSzoba/SzabaduloSzoba";
 
 
 const router = createBrowserRouter([
@@ -91,6 +92,10 @@ const router = createBrowserRouter([
             {
                 path: 'hooks',
                 element: <Hooks />
+            },
+            {
+                path: 'szabaduloSzoba',
+                element: <SzabaduloSzoba />
             }
         ]
     }

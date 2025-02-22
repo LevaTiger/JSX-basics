@@ -11,6 +11,7 @@ import PropFunction from "./propFunction/PropFunction";
 import CarsData from "./props/CarsEasy";
 import Props from "./props/Props";
 import SpreadOperator from "./spreadOperator/SpreadOperator";
+import SzabaduloSzoba from "./szabaduloSzoba/SzabaduloSzoba";
 import TernaryOperator from "./ternaryOperator/TernaryOperator";
 import Variables from "./variables/Variables";
 
@@ -30,5 +31,6 @@ export default {
     IfStatement: Conditionals,
     List,
     Forms,
-    Hooks
+    Hooks,
+    SzabaduloSzoba
 }
