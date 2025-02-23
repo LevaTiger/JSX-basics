@@ -13,6 +13,7 @@ import Props from "./props/Props";
 import SpreadOperator from "./spreadOperator/SpreadOperator";
 import SzabaduloSzoba from "./szabaduloSzoba/SzabaduloSzoba";
 import TernaryOperator from "./ternaryOperator/TernaryOperator";
+import Felvetel from "./ujFelvetel/ujFelvetel";
 import Variables from "./variables/Variables";
 
 
@@ -32,5 +33,6 @@ export default {
     List,
     Forms,
     Hooks,
-    SzabaduloSzoba
+    SzabaduloSzoba,
+    Felvetel
 }

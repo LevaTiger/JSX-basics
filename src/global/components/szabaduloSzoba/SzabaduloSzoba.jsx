@@ -1,25 +1,30 @@
 import { useEffect, useState } from "react";
 import { backButtonStyle, goBack, paddingStyle } from "../../features/goBackBtn";
 import './szabadulo.css'
-import Felvetel from "./ujFelvetel";
+import { getAppDb } from "../../features/firebase";
+import { collection, getDocs } from "firebase/firestore";
 const SzabaduloSzoba =()=>{
 
 const [foglalasok, setFoglalasok] = useState([]);
 
-useEffect(()=>{
-    const fetchData = async () =>{
-        try{
-            const response = await fetch('/assets/foglalasok.json');
-            const responseData = await response.json();
-            
-            setFoglalasok(responseData);
-        } catch(error){
-            console.error('Hiba történt az adatok lkérdezésekor', error)
+useEffect(() => {
+    const fetchData = async () => {
+        const db = getAppDb();
+        const foglalasokFire = collection(db, 'foglalasok');
+        try {
+            const foglalasokSnapshot = await getDocs(foglalasokFire);
+            const foglalasokData = foglalasokSnapshot.docs.map(item => item.data());
+            console.log(foglalasokData);
+            setFoglalasok(foglalasokData);
+        } catch (error) {
+            console.error('Hiba történt az adatok lekérdezésekor', error);
         }
     };
+
     fetchData();
-    
-}, []);
+}, []); 
+
+
 
     return( 
         <div className="container" style={paddingStyle}>
@@ -53,7 +58,7 @@ useEffect(()=>{
 
                 </table>
             </div>
-                <Felvetel />
+                
         </div>
     )
 }

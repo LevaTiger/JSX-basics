@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './js-projects.css'
 
 
@@ -9,49 +10,49 @@ const JsProjects =()=>{
             <div className='nav-buttons-div'>
                 <div>
 
-                    <a href="/functions">Functions</a>
+                    <Link to={'/functions'}>Functions</Link>
                 </div>
                 <div>
-                    <a href="/variables">Variables</a>
+                    <Link to={"/variables"}>Variables</Link>
                 </div>
                 <div>
-                    <a href="/arrays">Arrays</a>
+                    <Link to={"/arrays"}>Arrays</Link>
                 </div>
                 <div>
-                    <a href="/destructuring">Destructuring</a>
+                    <Link to={"/destructuring"}>Destructuring</Link>
                 </div>
                 <div>
-                    <a href="/spreadOperator">SpreadOperator</a>
+                    <Link to={"/spreadOperator"}>SpreadOperator</Link>
                 </div>
                 <div>
-                    <a href="/JsModule">JsModule</a>
+                    <Link to={"/JsModule"}>JsModule</Link>
                 </div>
                 <div>
-                    <a href="/ternary-operator">TernaryOperator</a>
+                    <Link to={"/ternary-operator"}>TernaryOperator</Link>
                 </div>
                 <div>
-                    <a href="/props">Props</a>
+                    <Link to={"/props"}>Props</Link>
                 </div>
                 <div>
-                    <a href="/propfunction">Prop a Function</a>
+                    <Link to={"/propfunction"}>Prop a Function</Link>
                 </div>
                 <div>
-                    <a href="/onclick">Events</a>
+                    <Link to={"/onclick"}>Events</Link>
                 </div>
                 <div>
-                    <a href="/conditional-rendering">Conditional</a>
+                    <Link to={"/conditional-rendering"}>Conditional</Link>
                 </div>
                 <div>
-                    <a href="lists">Lists</a>
+                    <Link to={"lists"}>Lists</Link>
                 </div>
                 <div>
-                    <a href="forms">Forms</a>
+                    <Link to={"forms"}>Forms</Link>
                 </div>
                 <div>
-                    <a href="hooks">Hooks</a>
+                    <Link to={"hooks"}>Hooks</Link>
                 </div>
                 <div>
-                    <a href="szabaduloSzoba">Szabaduló - Gyakorlás</a>
+                    <Link to={"szabaduloSzoba"}>Szabaduló - Gyakorlás</Link>
                 </div>
             </div>
             <div className="article">
