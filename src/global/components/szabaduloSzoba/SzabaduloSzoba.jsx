@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { backButtonStyle, goBack, paddingStyle } from "../../features/goBackBtn";
 import './szabadulo.css'
+import Felvetel from "./ujFelvetel";
 const SzabaduloSzoba =()=>{
 
 const [foglalasok, setFoglalasok] = useState([]);
@@ -30,13 +31,13 @@ useEffect(()=>{
                             <th>Dátum</th>
                             <th>Név</th>
                             <th>Fő</th>
-                            <th>Helyszín</th>
+                            <th>Cím</th>
                             <th>Irányítószám</th>
                         </tr>
                     </thead>
                     <tbody>
                     {foglalasok
-                        // .slice() // hogy ne módosítsuk az eredeti tömböt
+                        .slice() // hogy ne módosítsuk az eredeti tömböt
                         .sort((a, b) => new Date(b.datum) - new Date(a.datum)) // Dátum szerint csökkenő sorrend
                         .map(({ datum, nev, fo, cim, iranyitoszam }, index) => (
                     <tr key={index}>
@@ -46,11 +47,12 @@ useEffect(()=>{
                         <td>{cim}</td>
                         <td>{iranyitoszam}</td>
                     </tr>
-        ))}
-</tbody>
+                        ))}
+                    </tbody>
 
                 </table>
             </div>
+                <Felvetel />
         </div>
     )
 }
