@@ -134,3 +134,40 @@ const [inputValues, setInputValues] = useState({
             console.error('Hiba történt a felhasználó hozzáadása során')
         }
     }
+
+
+form data kiynerése:
+
+ const onSubmit = (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const formValues = Array.from(formData.entries());
+
+           formObj = { ...formObj, sections: campaign.sections };
+
+        addQueryCampaign(formObj)
+ }
+
+ ehhez firebaseQuery-t kell létrehozni:
+ import { addDoc, collection, Timestamp } from "firebase/firestore";
+import { getAppDb } from "../../firebase";
+
+export default async function addQueryCampaign({ title, slug, setting, heroImg, releaseDate, sections }) {
+
+    const db = getAppDb();
+    const collCampaigns = collection(db, 'campaigns');
+
+    const dbObj = {
+        title,
+        slug,
+        setting,
+        heroImg,
+        sections,
+        releaseDate: Timestamp.fromDate( new Date(releaseDate) )
+    };
+
+    const newDoc = await addDoc( collCampaigns, dbObj );
+
+    console.log(newDoc);
+}
